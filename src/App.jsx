@@ -185,45 +185,20 @@ const basePoints = [
   }
 ];
 
+const mapMarkerIcon = (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4.5 11.5l7.5-6 7.5 6" strokeWidth="1.8" />
+    <path d="M6.5 10.5v8h11v-8" strokeWidth="1.6" />
+    <path d="M10.2 18.5v-4.2h3.6v4.2" strokeWidth="1.6" />
+  </svg>
+);
+
 const mapIcons = {
-  kanavinsky: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M3 14h18" strokeWidth="1.6" />
-      <path d="M6 14c1.5-3 3.5-4 6-4s4.5 1 6 4" strokeWidth="1.6" />
-      <path d="M8 14c0-2 1.8-3.4 4-3.4s4 1.4 4 3.4" strokeWidth="1.2" />
-    </svg>
-  ),
-  fair: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 18h16" strokeWidth="1.6" />
-      <path d="M6 18l6-10 6 10" strokeWidth="1.6" />
-      <path d="M10 12h4" strokeWidth="1.4" />
-      <path d="M12 8v-3" strokeWidth="1.4" />
-    </svg>
-  ),
-  boulevard: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 6c3 0 5 2 5 4.6 0 2.6-2.2 4.4-5 4.4s-5-1.8-5-4.4C7 8 9 6 12 6z" strokeWidth="1.4" />
-      <path d="M12 15v5" strokeWidth="1.6" />
-      <path d="M9 20h6" strokeWidth="1.6" />
-    </svg>
-  ),
-  cathedral: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M7 18h10" strokeWidth="1.6" />
-      <path d="M8 18v-5c0-2 1.8-3.8 4-3.8s4 1.8 4 3.8v5" strokeWidth="1.4" />
-      <path d="M12 5v3" strokeWidth="1.6" />
-      <path d="M10.5 7.2h3" strokeWidth="1.2" />
-    </svg>
-  ),
-  pavilion: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 18h16" strokeWidth="1.6" />
-      <path d="M6 18v-6l6-4 6 4v6" strokeWidth="1.4" />
-      <path d="M9 18v-4" strokeWidth="1.4" />
-      <path d="M15 18v-4" strokeWidth="1.4" />
-    </svg>
-  )
+  kanavinsky: mapMarkerIcon,
+  fair: mapMarkerIcon,
+  boulevard: mapMarkerIcon,
+  cathedral: mapMarkerIcon,
+  pavilion: mapMarkerIcon
 };
 
 const basePointsById = Object.fromEntries(basePoints.map((point) => [point.id, point]));
