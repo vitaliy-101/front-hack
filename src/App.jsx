@@ -22,7 +22,7 @@ const audioLanguages = [
   { id: 'ru', label: 'Русския язык' },
   { id: 'en', label: 'English language' },
   { id: 'zh', label: '中国语文科' },
-  { id: 'fr', label: 'Françai' }
+  { id: 'fr', label: 'Français' }
 ];
 
 const defaultAudioByLang = {

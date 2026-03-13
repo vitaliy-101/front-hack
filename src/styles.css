@@ -212,6 +212,8 @@ button {
   font-size: 0.7rem;
   letter-spacing: 0.26em;
   color: rgba(26, 26, 26, 0.6);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .map-section {
@@ -897,6 +899,11 @@ button {
 
   .about-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .about-label {
+    letter-spacing: 0.2em;
+    font-size: 0.65rem;
   }
 
   .gallery-grid {
